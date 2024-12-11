@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const SheetDataFetcher = () => {
   const [sheetLink, setSheetLink] = useState('');
   const [loading, setLoading] = useState(false);
@@ -65,8 +66,8 @@ const SheetDataFetcher = () => {
 
       console.log(data)
 
-      // Send to backend
-      const backendURL = 'https://certificate-generator-ffkp.onrender.com/api/certificate/generate-by-json';
+   
+      const backendURL = 'https://certificate-generator-3vrg.onrender.com/api/certificate/generate';
       const backendResponse = await fetch(backendURL, {
         method: 'POST',
         headers: {
